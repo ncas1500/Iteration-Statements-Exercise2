@@ -30,7 +30,15 @@ namespace IterationStatements
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
         {
+            PrintThousand();
+            EveryThree();
+            CheckEquality(5, 6);
+            NumberCheck();
+            CheckSign();
+            CheckEligibility();
+            CheckRange();
             MultiplyNumber();
+
         }
 
         public static void PrintThousand()
@@ -51,15 +59,16 @@ namespace IterationStatements
 
         public static bool CheckEquality(int a, int b)
         {
-            if(a == b)
+            if (a == b)
             {
                 return true;
             }
+            else
+            {
+                return false;
+            }
+        }
 
-            return false;
-                
-        }   
-        
         public static void NumberCheck()
         {
             int i = 3;
