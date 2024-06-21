@@ -33,8 +33,8 @@ namespace IterationStatements
             PrintThousand();
             EveryThree();
             CheckEquality(5, 6);
-            NumberCheck();
-            CheckSign();
+            NumberCheck(4);
+            CheckSign(5);
             CheckEligibility();
             CheckRange();
             MultiplyNumber();
@@ -69,10 +69,10 @@ namespace IterationStatements
             }
         }
 
-        public static void NumberCheck()
+        public static void NumberCheck(int a)
         {
-            int i = 3;
-            if (i % 2 == 0)
+            
+            if (a % 2 == 0)
             {
                 Console.WriteLine("The number is even.");
             }
@@ -83,10 +83,10 @@ namespace IterationStatements
             
         }
 
-        public static void CheckSign()
+        public static void CheckSign(int a)
         {
-            int i = -9;
-            if (i > 0)
+            
+            if (a > 0)
             {
                 Console.WriteLine("This is a postive number.");
             }
